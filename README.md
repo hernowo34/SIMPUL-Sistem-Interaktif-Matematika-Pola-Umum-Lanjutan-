@@ -71,8 +71,6 @@ Aplikasi ini sudah diprogram agar dapat di-*host* pada jaringan lokal sehingga p
 
 ## 📸 Tampilan (*Screenshots*)
 
-> *(Gantikan bagian ini dengan tangkapan layar antarmuka program Anda sebelum dipublikasikan ke publik)*
-> 
 > ![Kalkulator Collatz](link_gambar_1)
 > ![Halaman Kuis Drag & Drop](link_gambar_2)
 > ![Halaman Kuis Level Tinggi](link_gambar_3)
