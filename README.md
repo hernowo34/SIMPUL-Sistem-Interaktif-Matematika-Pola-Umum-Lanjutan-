@@ -72,8 +72,8 @@ Aplikasi ini sudah diprogram agar dapat di-*host* pada jaringan lokal sehingga p
 ## 📸 Tampilan (*Screenshots*)
 
 > ![Kalkulator Collatz](https://github.com/hernowo34/SIMPUL-Sistem-Interaktif-Matematika-Pola-Umum-Lanjutan-/blob/main/Kalkulator%20Collatz.png)
-> ![Halaman Kuis Drag & Drop](https://github.com/hernowo34/SIMPUL-Sistem-Interaktif-Matematika-Pola-Umum-Lanjutan-/blob/main/Halaman%20Kuis%20Drag%20%26%20Drop.png).
-> ![Halaman Kuis Level Tinggi](https://github.com/hernowo34/SIMPUL-Sistem-Interaktif-Matematika-Pola-Umum-Lanjutan-/blob/main/Halaman%20Kuis%20Level%20Tinggi.png).
+> ![Halaman Kuis Drag & Drop](https://github.com/hernowo34/SIMPUL-Sistem-Interaktif-Matematika-Pola-Umum-Lanjutan-/blob/main/Halaman%20Kuis%20Drag%20%26%20Drop.png)
+> ![Halaman Kuis Level Tinggi](https://github.com/hernowo34/SIMPUL-Sistem-Interaktif-Matematika-Pola-Umum-Lanjutan-/blob/main/Halaman%20Kuis%20Level%20Tinggi.png)
 
 ## 📝 Lisensi
 Bebas untuk digunakan dan dimodifikasi untuk tujuan penelitian dan pendidikan.
