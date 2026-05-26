@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}Latihan Soal Pola - Edukasi Matematika{% endblock %}
+
+{% block content %}
+<div class="quiz-layout">
+    <div class="quiz-main card">
+        <div class="quiz-header">
+            <div>
+                <h2>Level <span id="currentLevel">1</span></h2>
+                <button type="button" id="resetLevelBtn" class="reset-btn">🔄 Reset ke Level 1</button>
+            </div>
+            <div class="progress-indicator">
+                <span id="questionCount">Soal 1 dari 3</span>
+            </div>
+        </div>
+        
+        <div id="quizContainer" class="quiz-body">
+            <div class="question-box">
+                <form id="quizForm" class="quiz-form-container">
+                    <div id="sequenceContainer" class="sequence-container">
+                        <p id="questionText" class="question-text">Memuat soal...</p>
+                    </div>
+                    <!-- Tempat untuk pilihan jawaban drag & drop -->
+                    <div id="optionsContainer" class="options-container hidden"></div>
+                    <div class="submit-container">
+                        <button type="submit" class="submit-btn" id="submitAnswerBtn">Cek Jawaban</button>
+                    </div>
+                </form>
+            </div>
+            
+            <p id="feedbackText" class="feedback"></p>
+        </div>
+        
+        <div id="levelComplete" class="hidden quiz-body text-center">
+            <h3>Luar Biasa!</h3>
+            <p>Anda telah menyelesaikan level ini dengan sempurna.</p>
+            <button id="nextLevelBtn" class="submit-btn primary-btn mt-2">Lanjut ke Level <span id="nextLevelNumber">2</span></button>
+        </div>
+    </div>
+</div>
+
+<!-- Tombol Pop-up Materi di Kanan Bawah -->
+<button id="materiToggle" class="floating-btn">📖 Materi</button>
+
+<!-- Pop-up Materi -->
+<div id="materiPopup" class="materi-popup hidden">
+    <div class="materi-header">
+        <h3>Materi Pola Bilangan SMP</h3>
+        <button id="closeMateri" class="close-btn">&times;</button>
+    </div>
+    <div class="materi-body">
+        <p><strong>Pola Bilangan</strong> adalah susunan angka-angka yang membentuk pola tertentu.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Pola dapat berupa deret aritmatika, geometri, maupun pola visual sehari-hari.</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/quiz.js') }}"></script>
+{% endblock %}

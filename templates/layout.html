@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Edukasi Matematika UM{% endblock %}</title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <h1 class="logo">Pola Umum <span class="highlight">& Lanjutan!</span></h1>
+            <div class="nav-links">
+                <a href="{{ url_for('index') }}" class="nav-btn">Kalkulator Collatz</a>
+                <a href="{{ url_for('quiz') }}" class="nav-btn primary-btn">Latihan Soal SMP</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

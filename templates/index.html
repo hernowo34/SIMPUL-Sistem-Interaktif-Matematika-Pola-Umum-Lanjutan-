@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}Kalkulator Collatz - Edukasi Matematika{% endblock %}
+
+{% block extra_head %}
+<!-- Memuat Chart.js dari CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="collatz-container">
+    <div class="input-section card">
+        <h2>Eksplorasi Collatz Conjecture</h2>
+        <p>Masukkan bilangan bulat positif untuk melihat barisan 3x+1.</p>
+        
+        <form id="collatzForm" class="collatz-form">
+            <input type="number" id="numberInput" placeholder="Contoh: 27" min="1" required>
+            <button type="submit" class="submit-btn" id="submitBtn">Hitung Pola</button>
+        </form>
+        
+        <div id="loading" class="hidden">Menghitung...</div>
+        
+        <div id="results" class="results-grid hidden">
+            <div class="result-card">
+                <h3>Langkah (Stopping Time)</h3>
+                <p id="stoppingTime" class="result-val">0</p>
+            </div>
+            <div class="result-card">
+                <h3>Nilai Puncak (Peak)</h3>
+                <p id="peakValue" class="result-val">0</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="chart-section card">
+        <canvas id="collatzChart"></canvas>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/collatz.js') }}"></script>
+{% endblock %}
